@@ -1,0 +1,33 @@
+version: 1
+project:
+  title: Đồ án Tiền xử lý dữ liệu — 24127197
+  description: Tiền xử lý dữ liệu bảng (Home Credit) và văn bản (IMDb) — Khai thác dữ liệu, HCMUS.
+  github: https://github.com/nnkhlh376/data-preprocessing-24127197
+  exclude:
+    - _build/**
+  toc:
+    - file: index.md
+    - title: Phần (a) — Dữ liệu bảng
+      children:
+        - file: tabular/01_data_overview.ipynb
+        - file: tabular/02_eda.ipynb
+        - file: tabular/03_missing_values.ipynb
+        - file: tabular/04_outliers.ipynb
+        - file: tabular/05_scaling_encoding.ipynb
+        - file: tabular/06_feature_selection.ipynb
+        - file: tabular/07_class_imbalance.ipynb
+        - file: tabular/08_final_pipeline.ipynb
+    - title: Phần (b) — Văn bản
+      children:
+        - file: text/01_data_overview_eda.ipynb
+        - file: text/02_cleaning_tokenization.ipynb
+        - file: text/03_stopwords_normalization.ipynb
+        - file: text/04_vectorization.ipynb
+        - file: text/05_sentence_embeddings.ipynb
+        - file: text/06_final_pipeline.ipynb
+    - file: report.md
+site:
+  template: book-theme
+  options:
+    logo_text: Tiền xử lý dữ liệu
+    folders: true
